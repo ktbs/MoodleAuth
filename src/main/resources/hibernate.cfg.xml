@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+		
+<hibernate-configuration>
+	<session-factory>
+		<!-- configure les différents paramètres de connexion à la base -->
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/AuthTraac</property>
+		<property name="hibernate.connection.username">root</property> <!-- TODO -->
+		<property name="hibernate.connection.password">rootfatma</property><!-- TODO -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<!-- affiche les requêtes exécutées -->
+		<property name="show_sql">false</property>
+
+		<!-- mets à jour le schéma de la base si nécessaire -->
+		<!-- valeurs possibles : validate | update | create | create-drop -->
+		<property name="hbm2ddl.auto">update</property>
+		<property name="jdbc.batch_size">20</property>
+
+        <!-- configuration du pool de connexions  -->
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.max_size">1000</property>
+		<property name="hibernate.c3p0.timeout">3000</property>
+		<property name="hibernate.c3p0.max_statements">500</property>
+        <property name="hibernate.c3p0.unreturnedConnectionTimeout">400</property>
+         <property name="connection.pool_size">1000</property>
+         
+       <mapping class="com.model.User"/>
+       <mapping class="com.model.Sessions"/>
+       <mapping class="com.model.ActionTrust"/>
+       <mapping class="com.model.Cluster"/>
+         <mapping class="com.model.ElBow"/>
+          <mapping class="com.model.AuthentificationResult"/>
+       
+
+		
+	</session-factory>
+
+</hibernate-configuration>
