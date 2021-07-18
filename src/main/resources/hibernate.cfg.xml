@@ -7,9 +7,9 @@
 	<session-factory>
 		<!-- configure les différents paramètres de connexion à la base -->
 		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-		<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/AuthTraac</property>
+		<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/authtraac</property>
 		<property name="hibernate.connection.username">root</property> <!-- TODO -->
-		<property name="hibernate.connection.password">rootfatma</property><!-- TODO -->
+		<property name="hibernate.connection.password">21751438m</property><!-- TODO -->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
 		<!-- affiche les requêtes exécutées -->
@@ -34,6 +34,7 @@
        <mapping class="com.model.Cluster"/>
          <mapping class="com.model.ElBow"/>
           <mapping class="com.model.AuthentificationResult"/>
+          <mapping class="com.model.EvalDiagno"/>
        
 
 		

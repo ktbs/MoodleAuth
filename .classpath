@@ -30,8 +30,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/derbelfatma/Documents/workspace-ggts-3.6.4.RELEASE/API_KTBS_Java/lib/java-json.jar"/>
-	<classpathentry kind="lib" path="/Users/derbelfatma/Desktop/json-simple-1.1.jar"/>
-	<classpathentry kind="lib" path="/Users/derbelfatma/Downloads/gson/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Spark/Downloads/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Spark/Downloads/java-json.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Spark/Desktop/gson-2.8.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

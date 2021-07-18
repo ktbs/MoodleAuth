@@ -47,7 +47,7 @@ public class AuthentificationComportementApprentissage {
 	          
 	//Session sessionHibernate=factory.openSession();
 	//sessionHibernate.beginTransaction();
-	
+		
 	
 	Trace TraceForumInteractionSignature = new Trace (base.get_uri()+"Trace-Forum-Interaction-Signature/") ; 
 	if (TraceForumInteractionSignature.Exist() ) {
@@ -846,7 +846,7 @@ public static void createTraceSessionFormationBehaviorsSignatureTrust(SessionFac
 		
 	}
 	
-     public static JSONObject calculbarycentre (Obsel AncientBarycentre, Obsel NouveauSession,int index, Double similaritÃ©) throws JSONException {
+     public static JSONObject calculbarycentre (Obsel AncientBarycentre, Obsel NouveauSession,int index, Double similarité) throws JSONException {
 		
 		JSONObject barycenter = new JSONObject();
 		
@@ -870,7 +870,7 @@ public static void createTraceSessionFormationBehaviorsSignatureTrust(SessionFac
 		//barycenter.put ("m:poid","1")
 		
 		if (AncientBarycentre != null) { 
-			Double NouveauPoid =  Double.parseDouble (AncientBarycentre.get_attribute("poid").getValue()) + similaritÃ© ;
+			Double NouveauPoid =  Double.parseDouble (AncientBarycentre.get_attribute("poid").getValue()) + similarité ;
 			barycenter.put ("m:poid",NouveauPoid);
 			}
 		else {barycenter.put ("m:poid",1.0);}

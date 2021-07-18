@@ -304,7 +304,7 @@ public class AlgoKmeans {
 	 				  // distance entre session et son barycentre 
 
 	 				  // pour chaque session calculer ai
-	 				  Double sommeDistance = 0.0 ;
+	 				  Double sommeDistance = 0.0 ; // SFSSQ
 	 				  for (int p=0; p< sessionArray.length() ; p++) {
 	 				sommeDistance+= 1-Clusters.calculdistanceSession (getsession (ArraySession ,(String) sessionArray.get(j)), getsession (ArraySession ,(String) sessionArray.get(p)));
 	 			//	System.out.println ("distance entre " + sessionArray.get(j) +" & " + sessionArray.get(p) + ":" +calculdistanceSession (getsession (ArraySession ,(String) sessionArray.get(j)), getsession (ArraySession ,(String) sessionArray.get(p))));
