@@ -1083,7 +1083,7 @@ public static void createTraceSessionFormationBehaviorsSignatureTrust(SessionFac
      public static float  calculateCoefficient(float distance, Obsel obs, float previousCalculatedTrust, String urlBaseSignature) {
 			float trust = previousCalculatedTrust;
 			
-			float Dthreshold =(float) 2 ;
+			float Dthreshold =(float) 1.5 ;
 			float Dnoise = 17 ;
 			if (distance <Dnoise && distance >0){
 				trust = (float) (trust + Dthreshold -distance);
